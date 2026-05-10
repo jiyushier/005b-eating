@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>今天听什么随机推荐器</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <div class="hero__copy">
+          <h1>今天听什么随机推荐器</h1>
+          <p class="hero__text">不知道今晚听哪一份饭饭？点击下方来抽取一个吧~</p>
+        </div>
+
+        <div class="draw-panel" aria-label="抽取入口">
+          <button class="hero__ticket" id="drawHeroFree" type="button" aria-label="从全部免费作品随机抽一份">
+            <span>全部免费作品</span>
+            <strong>🎲 抽好饭</strong>
+          </button>
+
+          <div class="quick-draw-grid">
+            <button data-free-filter="近期作品" type="button">近期作品池</button>
+            <button data-free-filter="早期作品" type="button">早期作品池</button>
+            <button data-free-filter="远古作品" type="button">远古作品池</button>
+            <button class="paid-entry-button" id="drawPaidFromHome" type="button">付费作品推荐 ✨</button>
+          </div>
+        </div>
+
+        <div class="series-group" aria-label="查看系列列表">
+          <button data-series-id="sleep-guide" type="button">助眠哄睡</button>
+          <button data-series-id="hug-series" type="button">给你一个抱抱</button>
+        </div>
+      </header>
+
+      <main>
+        <section id="freeSection" class="section section--active" aria-labelledby="freeTitle">
+          <h2 id="freeTitle" class="visually-hidden">抽取结果</h2>
+          <div id="freeResult" class="result-area" aria-live="polite">
+            <div class="empty-state">
+              <p>先按一下按钮，今天的免费饭饭就会出现。</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="paidSection" class="section" aria-labelledby="paidTitle">
+          <div class="panel">
+            <div class="panel__head">
+              <div>
+                <p class="eyebrow">独立专区</p>
+                <h2 id="paidTitle">完整作品专区</h2>
+              </div>
+              <button class="ghost-button" id="showFreeButton" type="button">回到免费抽取</button>
+            </div>
+
+            <p class="section-note">这里不会影响首页免费随机。想慢慢挑完整作品时，再进来看看就好。</p>
+
+            <div class="draw-box">
+              <button class="primary-button" id="drawAnyPaid" type="button">随机推荐一部完整作品</button>
+              <button class="soft-button" data-paid-filter="新粉入坑" type="button">新粉入坑推荐</button>
+              <button class="soft-button" data-paid-filter="近期新作" type="button">近期新作推荐</button>
+              <button class="soft-button" data-paid-filter="经典作品" type="button">经典作品推荐</button>
+            </div>
+          </div>
+
+          <div id="paidResult" class="result-area" aria-live="polite"></div>
+
+          <div class="list-head">
+            <h3>全部完整作品</h3>
+            <button class="ghost-button" id="showAllPaid" type="button">查看全部</button>
+          </div>
+          <div id="paidList" class="work-grid"></div>
+        </section>
+      </main>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
