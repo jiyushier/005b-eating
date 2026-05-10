@@ -4,7 +4,6 @@
   freeWorks：免费作品库，只会参与首页默认随机。
   paidWorks：付费完整作品库，只会在完整作品专区展示和随机。
 
-  这个文件可以由 00_当前源码开发版/admin.html 导出生成。
   如果某个字段没有内容，可以留空字符串 "" 或空数组 []，页面会自动隐藏对应区域。
 */
 
@@ -1416,6 +1415,6 @@ const paidUnlockLinks = [
   {
     "label": "解锁完整版",
     "note": "",
-    "url": "http://payhip.com/jiyu12"
+    "url": "https://payhip.com/jiyu12"
   }
 ];
