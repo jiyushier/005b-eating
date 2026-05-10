@@ -4,6 +4,7 @@
   freeWorks：免费作品库，只会参与首页默认随机。
   paidWorks：付费完整作品库，只会在完整作品专区展示和随机。
 
+  这个文件可以由 00_当前源码开发版/admin.html 导出生成。
   如果某个字段没有内容，可以留空字符串 "" 或空数组 []，页面会自动隐藏对应区域。
 */
 
@@ -12,11 +13,16 @@ const freeWorks = [
     "id": "free-001",
     "title": "在外面醉酒鬼混后，跑到了前男友家",
     "typeTags": [
-      "吃醋"
+      "吃醋",
+      "强制爱"
     ],
     "period": "近期作品",
     "note": "",
     "cloudLinks": [
+      {
+        "label": "",
+        "url": "https://www.mediafire.com/file/meen5qdoyqwxm5i/%25E3%2580%2590%25E5%2590%2583%25E9%2586%258B%25E3%2580%2591%25E5%259C%25A8%25E5%25A4%2596%25E9%259D%25A2%25E9%2586%2589%25E9%2585%2592%25E9%25AC%25BC%25E6%25B7%25B7%25E5%2590%258E%25EF%25BC%258C%25E8%25B7%2591%25E5%2588%25B0%25E4%25BA%2586%25E5%2589%258D%25E7%2594%25B7%25E5%258F%258B%25E5%25AE%25B6%25EF%25BC%2588%25E5%258F%258C%25E8%25AF%25AD%25E5%25AD%2597%25E5%25B9%2595%25E8%25A7%2586%25E9%25A2%2591%25EF%25BC%2589.mp4/file"
+      },
       {
         "label": "",
         "url": "https://u.pcloud.link/publink/show?code=XZMOAO5Z5tUCMRi6VHBqc3D4ofEm18NoSMHk"
@@ -24,12 +30,7 @@ const freeWorks = [
     ],
     "pageLink": "",
     "isPublic": true,
-    "audioLinks": [
-      {
-        "label": "",
-        "url": "https://u.pcloud.link/publink/show?code=XZMOAO5Z5tUCMRi6VHBqc3D4ofEm18NoSMHk"
-      }
-    ]
+    "audioLinks": []
   },
   {
     "id": "free-002",
@@ -39,81 +40,134 @@ const freeWorks = [
     ],
     "period": "近期作品",
     "note": "",
-    "cloudLinks": [],
+    "cloudLinks": [
+      {
+        "label": "",
+        "url": "https://www.mediafire.com/file/wvnuo78vf8ptyhx/%25E3%2580%2590%25E7%25BA%25AF%25E7%2588%25B1%25E7%25B2%2597%25E5%258F%25A3%25E3%2580%2591%25E5%25BF%2583%25E8%25B7%25B3%25E5%25A4%25B1%25E6%258E%25A7%25EF%25BC%259A%25E7%25BE%259E%25E8%25BE%25B1%25E7%259A%2584%25E7%25A7%2598%25E5%25AF%2586%25E8%25AF%25B7%25E6%25B1%2582-_by_%25E7%25BA%25AA%25E5%25B1%25BF%25E5%258D%2581%25E4%25BA%258C.mp3/file"
+      },
+      {
+        "label": "",
+        "url": "https://u.pcloud.link/publink/show?code=XZmaDK5ZPbVzlf8kcfbltE2Ql5qgn0CYzQHX"
+      }
+    ],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-003",
     "title": "家庭教师2",
     "typeTags": [
-      "粗口羞辱"
+      "粗口羞辱",
+      "调教"
     ],
     "period": "近期作品",
     "note": "",
-    "cloudLinks": [],
+    "cloudLinks": [
+      {
+        "label": "",
+        "url": "https://www.mediafire.com/file/otfn5xiy5f70m4f/%25E3%2580%2590%25E7%25B2%2597%25E5%258F%25A3%25E7%25BE%259E%25E8%25BE%25B1%25E3%2580%2591%25E5%25AE%25B6%25E5%25BA%25AD%25E6%2595%2599%25E5%25B8%25882-_by_%25E7%25BA%25AA%25E5%25B1%25BF%25E5%258D%2581%25E4%25BA%258C.mp3/file"
+      },
+      {
+        "label": "",
+        "url": "https://u.pcloud.link/publink/show?code=XZvaDK5ZD9VOyOJGzHQgnqhCwjtdvfsL4zsk"
+      }
+    ],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-004",
     "title": "颤抖游戏1（温柔版）",
     "typeTags": [
-      "寸止倒计时"
+      "寸止",
+      "倒计时"
     ],
     "period": "近期作品",
     "note": "",
-    "cloudLinks": [],
+    "cloudLinks": [
+      {
+        "label": "",
+        "url": "https://www.mediafire.com/file/kaih5cdgztwtaze/%25E3%2580%2590%25E5%25AF%25B8%25E6%25AD%25A2%25E5%2580%2592%25E8%25AE%25A1%25E6%2597%25B6%25E3%2580%2591%25E9%25A2%25A4%25E6%258A%2596%25E6%25B8%25B8%25E6%2588%258F1%25EF%25BC%2588%25E6%25B8%25A9%25E6%259F%2594%25E7%2589%2588%25EF%25BC%2589-_by_%25E7%25BA%25AA%25E5%25B1%25BF%25E5%258D%2581%25E4%25BA%258C.mp3/file"
+      },
+      {
+        "label": "",
+        "url": "https://u.pcloud.link/publink/show?code=XZfaDK5ZLykxkW68u70GEa0BhbQ8VSndhckX"
+      }
+    ],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-005",
     "title": "颤抖游戏2（粗口羞辱）",
     "typeTags": [
-      "寸止倒计时"
+      "寸止",
+      "倒计时"
     ],
     "period": "近期作品",
     "note": "",
-    "cloudLinks": [],
+    "cloudLinks": [
+      {
+        "label": "",
+        "url": "https://www.mediafire.com/file/az391g0xahv7un1/%25E3%2580%2590%25E5%25AF%25B8%25E6%25AD%25A2%25E5%2580%2592%25E8%25AE%25A1%25E6%2597%25B6%25E3%2580%2591%25E9%25A2%25A4%25E6%258A%2596%25E6%25B8%25B8%25E6%2588%258F2%25EF%25BC%2588%25E7%25B2%2597%25E5%258F%25A3%25E7%25BE%259E%25E8%25BE%25B1%25EF%25BC%2589-_by_%25E7%25BA%25AA%25E5%25B1%25BF%25E5%258D%2581%25E4%25BA%258C.mp3/file"
+      },
+      {
+        "label": "",
+        "url": "https://u.pcloud.link/publink/show?code=XZeaDK5Z2ArgRX1JwyuWvSRVxx3MujvyIpWy"
+      }
+    ],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-006",
     "title": "颤抖游戏3（宿舍篇·双声道）",
     "typeTags": [
-      "寸止倒计时"
+      "寸止",
+      "倒计时"
     ],
     "period": "近期作品",
     "note": "",
-    "cloudLinks": [],
-    "pageLink": "",
-    "isPublic": true
-  },
-  {
-    "id": "free-007",
-    "title": "颤抖游戏3（宿舍篇）",
-    "typeTags": [
-      "寸止倒计时"
+    "cloudLinks": [
+      {
+        "label": "",
+        "url": "https://www.mediafire.com/file/4xuewoarmxin730/%25E3%2580%2590%25E5%25AF%25B8%25E6%25AD%25A2%25E5%2580%2592%25E8%25AE%25A1%25E6%2597%25B6%25E3%2580%2591%25E9%25A2%25A4%25E6%258A%2596%25E6%25B8%25B8%25E6%2588%258F3%25EF%25BC%2588%25E5%25AE%25BF%25E8%2588%258D%25E7%25AF%2587-%25E5%258F%258C%25E5%25A3%25B0%25E9%2581%2593%25EF%25BC%2589-_by_%25E7%25BA%25AA%25E5%25B1%25BF%25E5%258D%2581%25E4%25BA%258C.mp3/file"
+      },
+      {
+        "label": "",
+        "url": "https://u.pcloud.link/publink/show?code=XZENDK5Zpo483f9GXQbOsycUaHGjI5O1sfy0"
+      }
     ],
-    "period": "近期作品",
-    "note": "",
-    "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-008",
     "title": "颤抖游戏4（师生办公室篇）",
     "typeTags": [
-      "寸止倒计时"
+      "寸止",
+      "倒计时"
     ],
     "period": "近期作品",
     "note": "",
-    "cloudLinks": [],
+    "cloudLinks": [
+      {
+        "label": "",
+        "url": "https://www.mediafire.com/file/fppylu48v8833mv/%25E3%2580%2590%25E5%25AF%25B8%25E6%25AD%25A2%25E5%2580%2592%25E8%25AE%25A1%25E6%2597%25B6%25E3%2580%2591%25E9%25A2%25A4%25E6%258A%2596%25E6%25B8%25B8%25E6%2588%258F4%25EF%25BC%2588%25E5%25B8%2588%25E7%2594%259F%25E5%258A%259E%25E5%2585%25AC%25E5%25AE%25A4%25E7%25AF%2587%25EF%25BC%2589-_by_%25E7%25BA%25AA%25E5%25B1%25BF%25E5%258D%2581%25E4%25BA%258C.mp3/file"
+      },
+      {
+        "label": "",
+        "url": "https://u.pcloud.link/publink/show?code=XZ9aDK5ZzgG5kc9K73b9LHluBGwbRXIJefBX"
+      }
+    ],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-009",
@@ -125,11 +179,12 @@ const freeWorks = [
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-010",
-    "title": "开心民员工",
+    "title": "开心小民工",
     "typeTags": [
       "方言"
     ],
@@ -137,7 +192,8 @@ const freeWorks = [
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-011",
@@ -149,7 +205,8 @@ const freeWorks = [
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-012",
@@ -161,43 +218,49 @@ const freeWorks = [
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-013",
-    "title": "半夜被女友叫醒一起爱爱",
+    "title": "半夜被女友口醒一起爱爱",
     "typeTags": [
-      "即兴"
+      "即兴",
+      "日常"
     ],
     "period": "近期作品",
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-014",
-    "title": "和男友一起浴室爱爱",
+    "title": "和男友一起在浴室爱爱",
     "typeTags": [
-      "即兴"
+      "即兴",
+      "日常"
     ],
     "period": "近期作品",
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-015",
     "title": "晨炮（小妈play）",
     "typeTags": [
-      "快餐日常"
+      "日常"
     ],
     "period": "近期作品",
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-016",
@@ -209,19 +272,22 @@ const freeWorks = [
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-017",
     "title": "脸红心跳的飞行棋：惩罚与亲密盲盒挑战",
     "typeTags": [
-      "情侣日常"
+      "情侣日常",
+      "飞行棋"
     ],
     "period": "近期作品",
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-018",
@@ -233,7 +299,8 @@ const freeWorks = [
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-019",
@@ -245,7 +312,8 @@ const freeWorks = [
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-020",
@@ -257,43 +325,36 @@ const freeWorks = [
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-021",
     "title": "边夸边操叫宝宝",
     "typeTags": [
-      "日常"
+      "日常",
+      "sweater talk"
     ],
     "period": "近期作品",
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
-  },
-  {
-    "id": "free-022",
-    "title": "边夸边操叫宝宝（无H音效）",
-    "typeTags": [
-      "日常"
-    ],
-    "period": "近期作品",
-    "note": "",
-    "cloudLinks": [],
-    "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-023",
     "title": "边骂边操，操完再哄",
     "typeTags": [
-      "日常"
+      "日常",
+      "dirty talk"
     ],
     "period": "近期作品",
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-024",
@@ -305,11 +366,12 @@ const freeWorks = [
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-025",
-    "title": "勾引正在上班的女朋友，回家后爆操",
+    "title": "勾引正在上班的女友，回家后爆操",
     "typeTags": [
       "日常"
     ],
@@ -317,7 +379,8 @@ const freeWorks = [
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-026",
@@ -329,7 +392,8 @@ const freeWorks = [
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-027",
@@ -341,11 +405,12 @@ const freeWorks = [
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-028",
-    "title": "有你味道的香蕉更好吃",
+    "title": "有你味道的雪糕更好吃",
     "typeTags": [
       "日常"
     ],
@@ -353,11 +418,12 @@ const freeWorks = [
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-029",
-    "title": "为什么上？先把你给办了！",
+    "title": "办什么公？先把你给办了！",
     "typeTags": [
       "双声道-日常"
     ],
@@ -365,7 +431,8 @@ const freeWorks = [
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-030",
@@ -377,7 +444,8 @@ const freeWorks = [
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-031",
@@ -389,7 +457,8 @@ const freeWorks = [
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-032",
@@ -401,7 +470,8 @@ const freeWorks = [
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-033",
@@ -413,19 +483,22 @@ const freeWorks = [
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-034",
     "title": "你的网恋男友1",
     "typeTags": [
-      "语爱"
+      "语爱",
+      "自慰引导"
     ],
     "period": "近期作品",
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-035",
@@ -437,7 +510,8 @@ const freeWorks = [
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-036",
@@ -449,7 +523,8 @@ const freeWorks = [
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-037",
@@ -461,43 +536,48 @@ const freeWorks = [
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-038",
     "title": "把被压扁的抱枕重新变得蓬松",
     "typeTags": [
-      "未分类"
+      "清水日常"
     ],
     "period": "近期作品",
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-039",
     "title": "高潮射精混剪",
     "typeTags": [
-      "未分类"
+      "一滴都没有了"
     ],
     "period": "近期作品",
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-040",
     "title": "中秋特辑",
     "typeTags": [
-      "纯爱"
+      "纯爱",
+      "船震"
     ],
     "period": "远古作品",
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-041",
@@ -509,19 +589,21 @@ const freeWorks = [
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-042",
     "title": "调教",
     "typeTags": [
-      "短短"
+      "短短小音频"
     ],
     "period": "远古作品",
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-043",
@@ -533,7 +615,8 @@ const freeWorks = [
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-044",
@@ -545,7 +628,8 @@ const freeWorks = [
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-045",
@@ -557,7 +641,8 @@ const freeWorks = [
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-046",
@@ -569,7 +654,8 @@ const freeWorks = [
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-047",
@@ -581,11 +667,12 @@ const freeWorks = [
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-048",
-    "title": "机器人男友（早期作品）",
+    "title": "机器人男友",
     "typeTags": [
       "人外"
     ],
@@ -593,7 +680,8 @@ const freeWorks = [
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-049",
@@ -605,7 +693,8 @@ const freeWorks = [
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-050",
@@ -617,7 +706,8 @@ const freeWorks = [
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-051",
@@ -629,43 +719,35 @@ const freeWorks = [
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-052",
     "title": "颁奖礼的休息室",
     "typeTags": [
-      "羞辱"
+      "调教羞辱"
     ],
     "period": "远古作品",
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-053",
     "title": "左右为男（3P纪余生&纪红豆）",
     "typeTags": [
-      "3P粗口"
+      "3P",
+      "粗口"
     ],
     "period": "早期作品",
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
-  },
-  {
-    "id": "free-054",
-    "title": "监禁：心之孤岛",
-    "typeTags": [
-      "纯爱"
-    ],
-    "period": "早期作品",
-    "note": "",
-    "cloudLinks": [],
-    "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-055",
@@ -677,35 +759,12 @@ const freeWorks = [
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
-  },
-  {
-    "id": "free-056",
-    "title": "监禁2 心之迷宫",
-    "typeTags": [
-      "纯爱"
-    ],
-    "period": "早期作品",
-    "note": "",
-    "cloudLinks": [],
-    "pageLink": "",
-    "isPublic": true
-  },
-  {
-    "id": "free-057",
-    "title": "监禁3 心之永恒",
-    "typeTags": [
-      "纯爱"
-    ],
-    "period": "早期作品",
-    "note": "",
-    "cloudLinks": [],
-    "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-058",
-    "title": "你如星光",
+    "title": "你如星光1",
     "typeTags": [
       "纯爱"
     ],
@@ -713,7 +772,8 @@ const freeWorks = [
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-059",
@@ -725,7 +785,8 @@ const freeWorks = [
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-060",
@@ -737,11 +798,12 @@ const freeWorks = [
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-061",
-    "title": "医务室重置版",
+    "title": "医务室的体育生（重置版）",
     "typeTags": [
       "粗口羞辱"
     ],
@@ -749,7 +811,8 @@ const freeWorks = [
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-062",
@@ -761,11 +824,12 @@ const freeWorks = [
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-063",
-    "title": "苞米地",
+    "title": "苞米地（天下没有免费的雪糕）",
     "typeTags": [
       "方言"
     ],
@@ -773,7 +837,8 @@ const freeWorks = [
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-064",
@@ -785,7 +850,8 @@ const freeWorks = [
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-065",
@@ -797,7 +863,8 @@ const freeWorks = [
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-066",
@@ -809,7 +876,8 @@ const freeWorks = [
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-067",
@@ -821,7 +889,8 @@ const freeWorks = [
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-068",
@@ -833,43 +902,49 @@ const freeWorks = [
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-069",
     "title": "只有我和你的星球",
     "typeTags": [
-      "姐弟病娇"
+      "姐弟",
+      "病娇"
     ],
     "period": "早期作品",
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-070",
     "title": "美梦成真",
     "typeTags": [
-      "快餐"
+      "即兴"
     ],
     "period": "早期作品",
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-071",
     "title": "以爱之名",
     "typeTags": [
-      "乱伦母子"
+      "乱伦",
+      "母子"
     ],
     "period": "早期作品",
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-072",
@@ -881,7 +956,8 @@ const freeWorks = [
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-073",
@@ -893,43 +969,47 @@ const freeWorks = [
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-074",
     "title": "七夕灯会",
     "typeTags": [
-      "清水"
+      "清水小音频"
     ],
     "period": "早期作品",
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-075",
     "title": "揭秘！某博主维持好身材的方法竟然是这个",
     "typeTags": [
-      "清水日常"
+      "清水日常小音频"
     ],
     "period": "早期作品",
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-076",
     "title": "生理期的温柔甜宠男友",
     "typeTags": [
-      "清水日常"
+      "清水日常安慰"
     ],
     "period": "早期作品",
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-077",
@@ -941,7 +1021,8 @@ const freeWorks = [
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-078",
@@ -953,7 +1034,8 @@ const freeWorks = [
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-079",
@@ -965,7 +1047,8 @@ const freeWorks = [
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-080",
@@ -977,7 +1060,8 @@ const freeWorks = [
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-081",
@@ -989,7 +1073,8 @@ const freeWorks = [
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-082",
@@ -1001,7 +1086,8 @@ const freeWorks = [
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-083",
@@ -1013,7 +1099,8 @@ const freeWorks = [
     "note": "",
     "cloudLinks": [],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   },
   {
     "id": "free-084",
@@ -1023,9 +1110,19 @@ const freeWorks = [
     ],
     "period": "早期作品",
     "note": "",
-    "cloudLinks": [],
+    "cloudLinks": [
+      {
+        "label": "",
+        "url": "https://www.mediafire.com/file/meen5qdoyqwxm5i/%25E3%2580%2590%25E5%2590%2583%25E9%2586%258B%25E3%2580%2591%25E5%259C%25A8%25E5%25A4%2596%25E9%259D%25A2%25E9%2586%2589%25E9%2585%2592%25E9%25AC%25BC%25E6%25B7%25B7%25E5%2590%258E%25EF%25BC%258C%25E8%25B7%2591%25E5%2588%25B0%25E4%25BA%2586%25E5%2589%258D%25E7%2594%25B7%25E5%258F%258B%25E5%25AE%25B6%25EF%25BC%2588%25E5%258F%258C%25E8%25AF%25AD%25E5%25AD%2597%25E5%25B9%2595%25E8%25A7%2586%25E9%25A2%2591%25EF%25BC%2589.mp4/file"
+      },
+      {
+        "label": "",
+        "url": "https://u.pcloud.link/publink/show?code=XZMOAO5Z5tUCMRi6VHBqc3D4ofEm18NoSMHk"
+      }
+    ],
     "pageLink": "",
-    "isPublic": true
+    "isPublic": true,
+    "audioLinks": []
   }
 ];
 
@@ -1415,6 +1512,6 @@ const paidUnlockLinks = [
   {
     "label": "解锁完整版",
     "note": "",
-    "url": "https://payhip.com/jiyu12"
+    "url": "http://payhip.com/jiyu12"
   }
 ];
