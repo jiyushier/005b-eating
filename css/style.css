@@ -134,15 +134,32 @@ h3 {
   transform: translateY(0) scale(0.98) rotate(-1deg);
 }
 
-.hero__ticket span {
+.hero__ticket > span {
   color: var(--muted);
   font-size: 0.95rem;
   font-weight: 800;
 }
 
 .hero__ticket strong {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.hero__ticket-icon {
+  width: 52px;
+  height: 52px;
+  display: inline-block;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.hero__ticket-text {
+  display: inline-block;
   color: var(--accent);
   font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 800;
   line-height: 1.1;
 }
 
@@ -615,6 +632,11 @@ button:hover {
 
   .hero__ticket {
     min-height: 126px;
+  }
+
+  .hero__ticket-icon {
+    width: 46px;
+    height: 46px;
   }
 
   .quick-draw-grid button {
