@@ -5,7 +5,6 @@
   const paidResult = document.querySelector("#paidResult");
   const paidList = document.querySelector("#paidList");
 
-  const cloudFallbackLabels = ["云盘链接", "备用云盘", "其他云盘"];
   const memoryShuffleBags = {};
   const storagePrefix = "listen_randomizer_shuffle_";
 
@@ -77,15 +76,28 @@
   function cloudButtons(cloudLinks) {
     if (!cloudLinks || !cloudLinks.length) return "";
 
-    const buttons = cloudLinks
-      .filter((link) => link && link.url)
-      .map((link, index) => {
-        const fallback = cloudFallbackLabels[index] || "其他云盘";
-        return linkButton(link.url, link.label || fallback);
+    const labelFallbacks = ["云盘链接", "打开云盘", "备用云盘", "其他云盘"];
+    const entries = [];
+    cloudLinks.forEach((link) => {
+      if (!link) return;
+      const url = String(link.url ?? "").trim();
+      if (!url) return;
+      entries.push({
+        url,
+        label: String(link.label ?? "").trim()
+      });
+    });
+
+    if (!entries.length) return "";
+
+    const buttons = entries
+      .map((entry, index) => {
+        const text = entry.label || labelFallbacks[index] || labelFallbacks[labelFallbacks.length - 1];
+        return linkButton(entry.url, text);
       })
       .join("");
 
-    return buttons ? `<div class="card-actions">${buttons}</div>` : "";
+    return `<div class="card-actions">${buttons}</div>`;
   }
 
   let freeAudioTeardown = null;
