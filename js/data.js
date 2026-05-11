@@ -1204,7 +1204,7 @@ const freeWorks = [
       "纯爱"
     ],
     "period": "早期作品",
-    "note": "",
+    "note": "如果你喜欢这个故事，相关前传/后续剧情已收录在付费作品中，欢迎解锁继续收听~",
     "cloudLinks": [
       {
         "label": "",
@@ -1292,7 +1292,7 @@ const freeWorks = [
       "粗口NTR"
     ],
     "period": "早期作品",
-    "note": "",
+    "note": "如果你喜欢这个故事，相关前传/后续剧情已收录在付费作品中，欢迎解锁继续收听~",
     "cloudLinks": [
       {
         "label": "",
@@ -1514,7 +1514,7 @@ const freeWorks = [
       "末日纯爱"
     ],
     "period": "早期作品",
-    "note": "",
+    "note": "如果你喜欢这个故事，相关前传/后续剧情已收录在付费作品中，欢迎解锁继续收听~",
     "cloudLinks": [
       {
         "label": "",
@@ -1536,7 +1536,7 @@ const freeWorks = [
       "末日纯爱"
     ],
     "period": "早期作品",
-    "note": "",
+    "note": "如果你喜欢这个故事，相关前传/后续剧情已收录在付费作品中，欢迎解锁继续收听~",
     "cloudLinks": [
       {
         "label": "",
