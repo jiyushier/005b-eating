@@ -275,10 +275,26 @@ button:hover {
 }
 
 .paid-entry-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
   color: #fff;
   background: linear-gradient(135deg, #d94d72, #f08a7d);
   box-shadow: 0 10px 22px rgba(217, 77, 114, 0.2);
   font-weight: 800;
+}
+
+.paid-entry-button__icon {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.paid-entry-button__text {
+  display: inline-block;
 }
 
 .quick-draw-grid button {
@@ -681,5 +697,10 @@ button:hover {
 
   .work-grid {
     grid-template-columns: 1fr;
+  }
+
+  .paid-entry-button__icon {
+    width: 22px;
+    height: 22px;
   }
 }
