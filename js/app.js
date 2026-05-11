@@ -364,7 +364,13 @@
   function syncCompanionEntryButtonLabel() {
     const btn = document.querySelector("#openCompanionCollection");
     if (!btn) return;
-    btn.textContent = normalizedCompanionCollectionConfig().title || defaultCompanionCollectionConfig().title;
+    const label = normalizedCompanionCollectionConfig().title || defaultCompanionCollectionConfig().title;
+    const textEl = btn.querySelector(".companion-button__text");
+    if (textEl) {
+      textEl.textContent = label;
+    } else {
+      btn.textContent = label;
+    }
   }
 
   function showCompanionCollection() {

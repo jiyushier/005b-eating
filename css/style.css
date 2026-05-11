@@ -329,6 +329,27 @@ button:hover {
   background: #e7f6f1;
 }
 
+#openCompanionCollection {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+
+#openCompanionCollection .companion-button__icon {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+#openCompanionCollection .companion-button__text {
+  display: inline-block;
+}
+
 .result-area {
   margin-top: 0;
 }
@@ -700,6 +721,11 @@ button:hover {
   }
 
   .paid-entry-button__icon {
+    width: 22px;
+    height: 22px;
+  }
+
+  #openCompanionCollection .companion-button__icon {
     width: 22px;
     height: 22px;
   }
