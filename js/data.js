@@ -2184,3 +2184,13 @@ const paidUnlockLinks = [
     "url": "http://payhip.com/jiyu12"
   }
 ];
+
+const companionCollectionConfig = {
+  "title": "睡前陪伴合集",
+  "tagLine": "声音合集",
+  "body": "这里收录了助眠引导、抱抱安慰，以及睡前可爱小故事。\n想被哄睡、被安慰，或者睡前听一点轻松的小故事，可以跳转网易云播客收听。",
+  "action": {
+    "label": "去网易云播客收听",
+    "url": "https://music.163.com/#/user/home?id=7802823742"
+  }
+};

@@ -342,6 +342,16 @@ button:hover {
   border-top-color: var(--gold);
 }
 
+.companion-card {
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.companion-card::before {
+  border-top-color: var(--accent);
+}
+
 .card-kicker {
   margin: 0 0 8px;
   color: var(--accent-deep);

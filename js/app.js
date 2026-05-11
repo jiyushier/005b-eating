@@ -319,23 +319,56 @@
     `;
   }
 
-  function seriesCard(series) {
-    if (!series) return "";
+  function defaultCompanionCollectionConfig() {
+    return {
+      title: "睡前陪伴合集",
+      tagLine: "声音合集",
+      body:
+        "这里收录了助眠引导、抱抱安慰，以及睡前可爱小故事。\n想被哄睡、被安慰，或者睡前听一点轻松的小故事，可以跳转网易云播客收听。",
+      action: { label: "去网易云播客收听", url: "" }
+    };
+  }
 
-    const items = (series.items || [])
-      .map((item) => `<li>${escapeHtml(item.title || "")}</li>`)
-      .join("");
+  function normalizedCompanionCollectionConfig() {
+    const d = defaultCompanionCollectionConfig();
+    const raw = typeof companionCollectionConfig !== "undefined" ? companionCollectionConfig : null;
+    if (!raw || typeof raw !== "object") return d;
+    const act = raw.action && typeof raw.action === "object" ? raw.action : {};
+    return {
+      title: String(raw.title ?? "").trim() || d.title,
+      tagLine: String(raw.tagLine ?? "").trim() || d.tagLine,
+      body: typeof raw.body === "string" ? raw.body : d.body,
+      action: {
+        label: String(act.label ?? "").trim() || d.action.label,
+        url: String(act.url ?? "").trim()
+      }
+    };
+  }
 
+  function companionCollectionCardHtml() {
+    const cfg = normalizedCompanionCollectionConfig();
+    const url = cfg.action.url;
+    const btn = url
+      ? `<a class="link-button" href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(cfg.action.label)}</a>`
+      : "";
     return `
-      <article class="work-card series-card">
-        <p class="card-kicker">声音合集</p>
-        <h3 class="work-title">${escapeHtml(series.title)}</h3>
-        ${series.description ? `<p class="note rich-text">${formatRichText(series.description)}</p>` : ""}
-        <ul class="series-list">
-          ${items}
-        </ul>
+      <article class="work-card companion-card">
+        <p class="card-kicker">${escapeHtml(cfg.tagLine)}</p>
+        <h3 class="work-title">${escapeHtml(cfg.title)}</h3>
+        <p class="note rich-text">${formatRichText(cfg.body)}</p>
+        ${btn ? `<div class="card-actions">${btn}</div>` : ""}
       </article>
     `;
+  }
+
+  function syncCompanionEntryButtonLabel() {
+    const btn = document.querySelector("#openCompanionCollection");
+    if (!btn) return;
+    btn.textContent = normalizedCompanionCollectionConfig().title || defaultCompanionCollectionConfig().title;
+  }
+
+  function showCompanionCollection() {
+    setFreeResultHtml(companionCollectionCardHtml());
   }
 
   function shuffle(items) {
@@ -454,11 +487,6 @@
     setFreeResultHtml(paidCard(work, "今天推荐的付费作品是"));
   }
 
-  function showSeries(seriesId) {
-    const series = seriesLists.find((item) => item.id === seriesId);
-    setFreeResultHtml(seriesCard(series));
-  }
-
   function renderPaidList() {
     paidList.innerHTML = paidWorks.map(paidCard).join("");
   }
@@ -483,9 +511,9 @@
     button.addEventListener("click", () => drawFree(button.dataset.freeFilter));
   });
 
-  document.querySelectorAll("[data-series-id]").forEach((button) => {
-    button.addEventListener("click", () => showSeries(button.dataset.seriesId));
-  });
+  const companionEntryBtn = document.querySelector("#openCompanionCollection");
+  if (companionEntryBtn) companionEntryBtn.addEventListener("click", showCompanionCollection);
+  syncCompanionEntryButtonLabel();
 
   document.querySelectorAll("[data-paid-filter]").forEach((button) => {
     button.addEventListener("click", () => drawPaid(button.dataset.paidFilter));
