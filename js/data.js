@@ -33,6 +33,29 @@ const freeWorks = [
     "audioLinks": []
   },
   {
+    "id": "free-086",
+    "title": "调教飞行棋第一期",
+    "typeTags": [
+      "手冲实录",
+      "自慰"
+    ],
+    "period": "近期作品",
+    "note": "",
+    "cloudLinks": [
+      {
+        "label": "",
+        "url": "https://www.mediafire.com/file/3ct6knynp9vrlv2/%25E3%2580%2590%25E6%2589%258B%25E5%2586%25B2%25E5%25AE%259E%25E5%25BD%2595%25E3%2580%2591%25E8%25B0%2583%25E6%2595%2599%25E9%25A3%259E%25E8%25A1%258C%25E6%25A3%258B%25E7%25AC%25AC%25E4%25B8%2580%25E6%259C%259F-_by_%25E7%25BA%25AA%25E5%25B1%25BF%25E5%258D%2581%25E4%25BA%258C.mp3/file"
+      },
+      {
+        "label": "",
+        "url": "https://u.pcloud.link/publink/show?code=XZg1pU5Z0OhbPfBW10XgkfzvPR2WhfOE5OlV"
+      }
+    ],
+    "audioLinks": [],
+    "pageLink": "",
+    "isPublic": true
+  },
+  {
     "id": "free-002",
     "title": "心跳失控：羞辱的秘密请求",
     "typeTags": [
